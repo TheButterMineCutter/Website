@@ -18,9 +18,7 @@ export const Home = () => {
     <>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       {/* <div id="cursor" className="fixed w-[25px] h-[25px] border-[2px] border-white/70 rounded-[50%] z-[10] mix-blend-difference pointer-events-none"></div> */}
-      <div className='sticky z-[9999]'>
-        <Navbar />
-      </div>
+      <Navbar />
       <div className="absolute" style={{transformStyle: "preserve-3d"}}>
         <div style={{transform: "translateZ(-300px) scale(2)"}}>
           <FirstImage />
