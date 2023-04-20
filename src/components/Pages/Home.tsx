@@ -1,27 +1,51 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import { ParallaxBanner, ParallaxBannerLayer, Parallax} from 'react-scroll-parallax';
 import { Navbar } from '../Navbar'
+import { FirstImage } from '../FirstImage'
 import { Introduction } from '../Introduction'
 import { WebDevelopment } from '../WebDevelopment'
-import { SystemsProgramming } from '../SystemsProgramming'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { About } from '../About'
+import { Contacts } from '../Contacts'
 
 export const Home = () => {
+
+  document.addEventListener("mousemove", e => {
+    document.getElementById("cursor")!.setAttribute("style", "top: "+(e.clientY - 12.5)+"px; left: "+(e.clientX - 12.5)+"px;")
+  })
+  
+
   return (
     <>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-      <Navbar />
-      <Parallax pages={3} className="top-0 left-0">
-        <ParallaxLayer offset={0} speed={0} factor={1.5} style={{backgroundImage:"url('https://images.pexels.com/photos/62627/niagara-cases-water-waterfall-62627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')", backgroundSize:'cover', filter:'brightness(50%)'}} />
-        <ParallaxLayer offset={0} speed={0.1}>
+      {/* <div id="cursor" className="fixed w-[25px] h-[25px] border-[2px] border-white/70 rounded-[50%] z-[10] mix-blend-difference pointer-events-none"></div> */}
+      <div className='sticky z-[9999]'>
+        <Navbar />
+      </div>
+      <div className="absolute" style={{transformStyle: "preserve-3d"}}>
+        <div style={{transform: "translateZ(-300px) scale(2)"}}>
+          <FirstImage />
+        </div>
+      </div>
+      <div style={{transformStyle: "preserve-3d"}}>
+        <div style={{transform: "translateZ(-200px) scale(1.68)"}}>
           <Introduction />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.5}>
+        </div>
+      </div>
+      <div style={{transformStyle: "preserve-3d"}}>
+        <div style={{transform: "translateZ(0px) scale(1)"}}>
           <WebDevelopment />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0.75}>
-          <SystemsProgramming />
-        </ParallaxLayer>
-      </Parallax>
+        </div>
+      </div>
+      <div style={{transformStyle: "preserve-3d"}}>
+        <div style={{transform: "translateZ(0px) scale(1)"}}>
+          <About />
+        </div>
+      </div>
+      <div style={{transformStyle: "preserve-3d"}}>
+        <div style={{transform: "translateZ(0px) scale(1)"}}>
+          <Contacts />
+        </div>
+      </div>
     </>
   )
 }

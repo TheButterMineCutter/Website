@@ -5,3 +5,10 @@
 body {
     background-color: rgb(15, 23, 42);
 }
+
+#root {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+}

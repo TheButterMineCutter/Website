@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <div className="w-full h-20 bg-transparent backdrop-blur-md border-b-2 border-white border-opacity-20 flex justify-center items-center z-[1] fixed">
+    <div className="w-full h-20 bg-transparent backdrop-blur-md border-b-2 border-white border-opacity-20 flex justify-center items-center top-0 left-0 hover:bg-white/5">
       <Link className="text-white font-medium ml-12" to="/">Home</Link>
-      <Link className="text-white font-medium ml-12" to="projects/">Projects</Link>
-      <Link className="text-white font-medium ml-12" to="about/">About</Link>
-      <Link className="text-white font-medium mr-auto ml-12" to="contacts/">Contacts</Link>
+      <Link className="text-white font-medium ml-12" to="/projects/">Projects</Link>
     </div>
   )
 }

@@ -1,5 +1,7 @@
+import { Navbar } from '../Navbar'
+
 export const Projects = () => {
   return (
-    <div>Projects</div>
+    <Navbar />
   )
 }
