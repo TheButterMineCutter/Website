@@ -6,7 +6,7 @@ export const Contacts = () => {
   return (
       <div className='h-screen w-screen bg-red-500 z-0'>
           <div className=''>
-              <img className="brightness-[50%] bg-cover" src="src/components/Leaves.webp" alt="waterfall"/>
+              <img className="brightness-[50%] bg-cover" src="src/assets/Leaves.webp" alt="waterfall"/>
           </div>
       </div>
   )
