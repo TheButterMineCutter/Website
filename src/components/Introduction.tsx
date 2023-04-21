@@ -8,7 +8,7 @@ export const Introduction = () => {
 
   return (
     <>
-        <div className="h-screen w-screen z-50">
+        <div className="h-[110vh] w-screen">
             <div className="w-screen h-[49vh] flex justify-center items-end">
                 <h1 className="z-10 text-white font-4 text-5xl font-medium">Hello, im Kamil</h1>
             </div>
