@@ -67,7 +67,7 @@ export const WebDevelopment = () => {
     blueBoxRef.current!.classList.add('animate-[move_1s_forwards]')
     typingRef.current!.classList.remove('w-0')
     typingRef.current!.classList.add('w-[154px]')
-    typingRef.current!.classList.remove('animate-[typed_2.5s_steps(20)_forwards]')
+    typingRef.current!.classList.remove('animate-[typed_2.5s_steps(20)_infinite_alternate]')
     typingRef.current!.classList.add('animate-[blink_1s_step-end_infinite]')
   }
 

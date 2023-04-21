@@ -2,12 +2,12 @@ import { Parallax } from 'react-scroll-parallax';
 
 export const About = () => {
   return (
-    <div className="w-screen h-screen bg-slate-800 z-10">
-      <div className="h-[30vh] w-screen flex justify-center items-center">
+    <div className="w-screen h-[110vh] bg-slate-800 z-50">
+      <div className="h-[30vh] w-screen flex justify-center items-end">
         <h1 className='text-white text-5xl font-medium bg-bottom bg-no-repeat bg-[length:100%_25%] bg-gradient-to-r from-red-600/90 to-red-600/90'>About</h1>
       </div>
       <div className="h-[70vh] w-screen flex justify-center items-center">
-         <p className="text-white h-[500px] w-[500px]">
+         <p className="text-white w-[500px]">
           As a web developer, I am passionate 
           about creating dynamic and user-friendly 
           websites that are both visually appealing

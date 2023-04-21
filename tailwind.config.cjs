@@ -9,7 +9,7 @@ module.exports = {
       animation: {
         animationOne: 'animationOne 750ms ease-in-out forwards',
         animationTwo: 'animationTwo 750ms ease-in-out forwards',
-        typed: 'typed 1s linear forwards',
+        typed: 'typed 1s linear infinite alternate',
         move: 'move 1s ease-in',
         blink: 'blink 1s linear infinite'
       },

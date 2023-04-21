@@ -31,7 +31,7 @@ export const Home = () => {
           <div style={{transform: "translateZ(0px) scale(1)"}}>
             <WebDevelopment />
           </div>
-          <div style={{transform: "translateZ(0px) scale(1)"}}>
+          <div style={{transform: "translateZ(-100px) scale(1.34)"}}>
             <About />
           </div>
           <div style={{transform: "translateZ(0px) scale(1)"}}>
