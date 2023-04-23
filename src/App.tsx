@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ParallaxProvider } from 'react-scroll-parallax';
-import { Home } from './components/Pages/Home'
-import { Projects } from './components/Pages/Projects'
+import { Home } from './Pages/Home'
+import { Projects } from './Pages/Projects'
 import { Navbar } from './components/Navbar'
 import './App.css'
 

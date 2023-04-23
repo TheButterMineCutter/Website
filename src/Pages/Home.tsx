@@ -1,11 +1,11 @@
 import React, {useRef} from 'react'
 import { ParallaxBanner, ParallaxBannerLayer, Parallax} from 'react-scroll-parallax';
-import { Navbar } from '../Navbar'
-import { FirstImage } from '../FirstImage'
-import { Introduction } from '../Introduction'
-import { WebDevelopment } from '../WebDevelopment'
-import { About } from '../About'
-import { Contacts } from '../Contacts'
+import { Navbar } from '../components/Navbar'
+import { FirstImage } from '../components/FirstImage'
+import { Introduction } from '../components/Introduction'
+import { WebDevelopment } from '../components/WebDevelopment'
+import { About } from '../components/About'
+import { Contacts } from '../components/Contacts'
 
 export const Home = () => {
 
