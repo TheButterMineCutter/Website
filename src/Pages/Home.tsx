@@ -1,5 +1,4 @@
 import React, {useRef} from 'react'
-import { ParallaxBanner, ParallaxBannerLayer, Parallax} from 'react-scroll-parallax';
 import { Navbar } from '../components/Navbar'
 import { FirstImage } from '../components/FirstImage'
 import { Introduction } from '../components/Introduction'
@@ -11,7 +10,6 @@ export const Home = () => {
 
   document.addEventListener("mousemove", e => {
     document.getElementById("cursor")!.setAttribute("style", "top: "+(e.clientY - 12.5)+"px; left: "+(e.clientX - 12.5)+"px;")
-    console.log(e.clientY)
   })
   
 
@@ -25,7 +23,7 @@ export const Home = () => {
           <div className="absolute" style={{transform: "translateZ(-300px) scale(2)"}}>
             <FirstImage />
           </div>
-          <div style={{transform: "translateZ(-200px) scale(1.68)"}}>
+          <div style={{transform: "translateZ(-200px) scale(1.68)"}} className="z-[999999]">
             <Introduction />
           </div>
           <div style={{transform: "translateZ(0px) scale(1)"}}>

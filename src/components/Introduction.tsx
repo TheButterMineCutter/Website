@@ -1,5 +1,3 @@
-import { Parallax } from 'react-scroll-parallax';
-
 export const Introduction = () => {
 
     const handleClick = () => {

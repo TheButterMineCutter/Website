@@ -1,5 +1,4 @@
 import React, {useEffect, useRef } from 'react'
-import { Parallax } from 'react-scroll-parallax';
 
 export const WebDevelopment = () => {
   const titleRef = useRef<HTMLDivElement>(null);
